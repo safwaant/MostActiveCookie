@@ -5,7 +5,7 @@
 using namespace std;
 int main(int argc, char* argv[]) {
 
-  ifstream myFile("cookie_log.csv");
+  ifstream myFile(argv[1]);
   string target = argv[3];
     
   map<string, vector<string>> cookiesPerDate;
